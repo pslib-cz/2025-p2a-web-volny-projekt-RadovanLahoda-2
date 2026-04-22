@@ -35,8 +35,8 @@ _Shrnutí všech odkazů na jednom místě. Průběžně aktualizujte._
 
 | Výstup | Odkaz |
 |---|---|
-| GitHub Pages (live) | [`Doplň odkaz`](#) |
-| Grafický manuál (Figma / Canva) | [`Doplň odkaz`](#) |
+| GitHub Pages (live) | [`Github Pages`](#https://pslib-cz.github.io/2025-p2a-web-volny-projekt-RadovanLahoda-2/) |
+| Grafický manuál (Figma / Canva) | [`Moodboard + Manuál`](#https://www.figma.com/design/MIXukxKLTOpWYhJ0GiDkIp/Grafier?node-id=0-1&t=yOm7HfXYrr5QiN9C-1) |
 | Grafický návrh webu (Figma) | [`Doplň odkaz`](#) |
 | Fotografie / média | [`Doplň odkaz`](#) |
 
