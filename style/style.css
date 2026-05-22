@@ -1,0 +1,49 @@
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree&display=swap');
+
+
+@layer reset, theme, page;
+@layer reset {
+    html {
+        font-family: var(--font-regular);
+        font-size: 100%;
+    }
+    body {
+        background-color: var(--primary);
+        color: var(--black);
+        box-sizing: border-box;
+        margin: 0;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-family: var(--font-heading);
+    }
+    img {
+        display: block;
+        max-width: 100%;
+    }
+
+}
+@layer theme {
+    :root {
+        --black: #000;
+        --white: #fff;
+        --primary: #F9F5EF;
+        --secondary: #18251B;
+        --orange-light: #D47A4A;
+        --orange-dark: #F8BF87;
+        --green-light: #87F8B8;
+        --green-dark: #4AD488;
+        --blue-light: #87EDF8;
+        --blue-dark: #4AD4D4;
+
+        --font-heading: 'Satoshi', sans-serif;
+        --font-regular: 'Figtree', sans-serif;
+    }
+}
+@layer page {
+
+
+    @media (min-width: 920px) {
+    
+    }
+}
