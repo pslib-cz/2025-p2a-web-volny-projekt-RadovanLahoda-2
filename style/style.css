@@ -9,8 +9,8 @@
         font-size: 100%;
     }
     body {
-        background-color: var(--primary);
         color: var(--black);
+        background-color: var(--primary);
         box-sizing: border-box;
         margin: 0;
     }
@@ -20,7 +20,7 @@
     img {
         display: block;
         max-width: 100%;
-        background-color: var(--black);
+        background-color: var(--secondary);
     }
 
 }
