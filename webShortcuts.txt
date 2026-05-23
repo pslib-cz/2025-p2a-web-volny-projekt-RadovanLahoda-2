@@ -1,0 +1,9 @@
+//Ahoj tady jsou shortcuty které jsem náhodně našel//
+
+alt + shift + a = index comment
+alt + shift + a +
+alt + left/right = move line
+fn + alt + shift + left/right = copy and paste line
+ctrl + shift + a = opens an agent
+alt + left/right = moves between opened spaces
+alt + ctrl + left/right = deletes/creates a window

@@ -3,35 +3,49 @@
 
 
 @layer reset, theme, page;
+
 @layer reset {
     html {
         font-family: var(--font-regular);
         font-size: 100%;
     }
+
     body {
         color: var(--black);
-        background-color: var(--primary);
+        background-color: var(--white);
         box-sizing: border-box;
         margin: 0;
     }
-    h1, h2, h3, h4, h5, h6 {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         font-family: var(--font-heading);
     }
+
     img {
         display: block;
         max-width: 100%;
-        background-color: var(--secondary);
+        background-color: var(--orange-light);
     }
 
+    header {
+        position: sticky;
+        top: 0;
+    }
 }
+
 @layer theme {
     :root {
         --black: #000;
         --white: #fff;
-        --primary: #F9F5EF;
+        --primary: #FEF1DD;
         --secondary: #18251B;
-        --orange-light: #D47A4A;
-        --orange-dark: #F8BF87;
+        --orange-dark: #D47A4A;
+        --orange-light: #F8BF87;
         --green-light: #87F8B8;
         --green-dark: #4AD488;
         --blue-light: #87EDF8;
@@ -41,10 +55,94 @@
         --font-regular: 'Figtree', sans-serif;
     }
 }
+
 @layer page {
 
-
-    @media (min-width: 920px) {
-    
+    .mobile {
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
     }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        max-width: 960px;
+        align-items: center;
+    }
+
+    .heading {
+        display: grid;
+        justify-items: center;
+        max-width: 244px;
+    }
+
+    .lepe_to_udelat_neslo {
+        height: 4px;
+        width: 100%;
+        background-color: var(--secondary);
+        border-radius: 5px;
+    }
+
+    .navigation {
+        background-color: var(--secondary);
+        display: flex;
+        flex-direction: row;
+        height: 76px;
+        padding: 0 1rem;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .navigation__link {
+        display: flex;
+    }
+
+    .footer__link {
+        text-decoration: none;
+        color: var(--white);
+    }
+
+    .navigation__link__item {}
+
+    .footer {
+        background-color: #18251B;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__link--socials {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .footer__copyright {
+        display: flex;
+        gap: 0.25rem;
+        color: var(--white);
+        justify-content: flex-end;
+    }
+
+    .footer__bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 1.25rem 1rem;
+    }
+
+    .footer__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 27px;
+        padding: 1.25rem 1rem;
+    }
+
+    .grafier__logo {
+        background-color: var(--white);
+        padding: 0.25rem 0.75rem;
+        border-radius: 2.5px;
+    }
+
+    @media (min-width: 1920px) {}
 }
