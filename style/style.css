@@ -14,7 +14,6 @@
         color: var(--black);
         background-color: var(--white);
         box-sizing: border-box;
-        margin: 0;
     }
 
     h1,
@@ -92,7 +91,13 @@
         padding: 0 1rem;
         justify-content: space-between;
         align-items: center;
+        position: relative;
+    }
 
+    .navigation__logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .navigation__link {
@@ -143,6 +148,89 @@
         padding: 0.25rem 0.75rem;
         border-radius: 2.5px;
     }
+
+    .bubbles {
+        display: flex;
+        gap: 3rem;
+        flex-direction: column;
+    }
+
+    .bubble {
+        border: 1px solid var(--secondary);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 1.5rem 0.5rem;
+        text-align: center;
+    }
+
+    .bubble--right {
+        border-radius: 12px;
+        border-bottom-left-radius: 0;
+    }
+
+    .bubble--left {
+        border-radius: 12px;
+        border-bottom-right-radius: 0;
+    }
+
+    .bubble__link {
+        color: var(--orange-dark);
+        font-weight: bold;
+    }
+
+    .bubble__title {
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    .card {
+        position: relative;
+        z-index: -1;
+    }
+
+    .card__product {
+    }
+
+    .card__desc {
+        position: absolute;
+        bottom: 0;
+        background-color: var(--white);
+        border-radius: 0 4rem 4rem 0;
+    }
+    .big__font {
+        font-size: 1.25rem;
+    }
+    .card__badge {
+        background-color: var(--white);
+        border-radius: 0 4rem 4rem 0;
+        padding: 0.5rem 1rem;
+        width: fit-content;
+    }
+
+    .card__badge--orange {
+        background-color: var(--orange-dark);
+        color: var(--white);
+        font-weight: bold;
+    }
+    .card__badges {
+        position: absolute;
+        margin: 0.5rem 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .button {
+        background-color: var(--orange-light);
+        border: 1px solid var(--orange-dark);
+        border-radius: 1.5px;
+        width: fit-content;
+        font-size: 1.125rem;
+    }
+
+    .button::after {}
 
     @media (min-width: 1920px) {}
 }
