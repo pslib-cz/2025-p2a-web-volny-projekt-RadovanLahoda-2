@@ -142,7 +142,20 @@
         grid-auto-rows: 27px;
         padding: 1.25rem 1rem;
     }
-
+    .footer__image {
+        width: 100%;
+        object-fit: cover;
+        height: 240px;
+    }
+    .footer__decoration {
+        position: relative;
+    }
+    .footer__svg {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        top: 50%;
+    }
     .grafier__logo {
         background-color: var(--white);
         padding: 0.25rem 0.75rem;
@@ -186,22 +199,36 @@
     }
 
     .card {
-        position: relative;
         z-index: -1;
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
     }
 
     .card__product {
+        position: relative;
     }
 
     .card__desc {
         position: absolute;
-        bottom: 0;
+        bottom: 0.5rem;
         background-color: var(--white);
-        border-radius: 0 4rem 4rem 0;
+        border-radius: 0 1.5rem 1.5rem 0;
+        padding: 1rem;
+        left: 0;
+        right: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        font-weight: bold;
+        text-align: center;
     }
+
     .big__font {
         font-size: 1.25rem;
     }
+
     .card__badge {
         background-color: var(--white);
         border-radius: 0 4rem 4rem 0;
@@ -214,6 +241,7 @@
         color: var(--white);
         font-weight: bold;
     }
+
     .card__badges {
         position: absolute;
         margin: 0.5rem 0;
@@ -221,13 +249,28 @@
         flex-direction: column;
         gap: 0.5rem;
     }
-
+    .card__link {
+        font-weight: bold;
+        color: var(--orange-dark);
+    }
     .button {
         background-color: var(--orange-light);
         border: 1px solid var(--orange-dark);
         border-radius: 1.5px;
         width: fit-content;
         font-size: 1.125rem;
+        padding: 0.375rem;
+        border-radius: 6px;
+    }
+
+    .button__link {
+        text-decoration: none;
+        color: var(--black);
+    }
+    .card__image {
+        height: 360px;
+        width: 100%;
+        object-fit: cover;
     }
 
     .button::after {}
