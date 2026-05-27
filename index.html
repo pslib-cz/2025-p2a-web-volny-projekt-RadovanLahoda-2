@@ -1,14 +1,12 @@
-</html>
 <!DOCTYPE html>
 <html lang="cs">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/style.css">
-    <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css">
     <link rel="icon" href="./img/logo/GrafierLogo.png">
     <title>GRAFIER</title>
+    <script type="module" src="./src/main.js"></script>
 </head>
 
 <body>
@@ -36,13 +34,30 @@
                 <p>Oživte své nápady, objevte nové možnosti a posuňte svou kreativitu na zcela novou úroveň s nástroji,
                     na které je spolehnutí.</p>
             </div>
-            <img src="./img/svg/uil--instagram-alt.svg" alt="svg">
-            <img src="./img/svg/uil--linkedin.svg" alt="svg">
-            <img src="./img/svg/uil--twitter.svg" alt="svg">
-            <img src="./img/svg/uil--youtube.svg" alt="svg">
-            <img src="./img/logo/LogoBig.svg" alt="logo">
-            <img src="./img/logo/LogoSmall.svg" alt="logo">
-            <img src="./img/logo/GrafierLogo.svg" alt="logo">
+            <div class="swiper__container swiper">
+                <div class="swiper__product__title">Produkty <img src="./img/logo/LogoSmall.svg" alt="Grafier Logo">
+                </div>
+                <div class="swipers swiper-wrapper">
+                    <div class="swiper__product swiper-slide">
+                        <div><img class="swiper__product__item" src="./img/product/ChromaDraw 13 Pro.jpg"
+                                alt="Chromadraw 13 Pro"></div>
+                        <div class="swiper__product__name"><a class="swiper__product__name--text" href="#"><span>ChromaDraw 13 Pro</span></a></div>
+                    </div>
+                
+                    <div class="swiper__product swiper-slide">
+                        <div><img class="swiper__product__item" src="./img/product/ChromaDraw 13 Pro.jpg"
+                                alt="Chromadraw 13 Pro"></div>
+                        <div class="swiper__product__name"><a class="swiper__product__name--text" href="#"><span>ChromaDraw 13 Pro</span></a></div>
+                    </div>
+                    <div class="swiper__product swiper-slide">
+                        <div><img class="swiper__product__item" src="./img/product/ChromaDraw 13 Pro.jpg"
+                                alt="Chromadraw 13 Pro"></div>
+                        <div class="swiper__product__name"><a class="swiper__product__name--text" href="#"><span>ChromaDraw 13 Pro</span></a></div>
+                    </div>
+                    </div>
+                    <div class="swiper-button-prev swiper-button-disabled"><img src="./img/other/iconamoon--arrow-left-2.svg" alt="Doleva"></div>
+                    <div class="swiper-button-next swiper-button-disabled"><img src="./img/other/iconamoon--arrow-right-2.svg" alt="Doprava"></div>
+            </div>
             <div class="card">
                 <div class="card__product">
                     <div class="card__badges">
@@ -96,8 +111,8 @@
     <footer>
         <div class="footer">
             <div class="footer__decoration">
-            <img class="footer__image" src="./img/other/Placeholder.png" alt="Footer Logo">
-            <img class="footer__svg" src="./img/logo/G_Logo.svg" alt="G Logo">
+                <img class="footer__image" src="./img/other/Placeholder.png" alt="Footer Logo">
+                <img class="footer__svg" src="./img/logo/G_Logo.svg" alt="G Logo">
             </div>
             <div class="footer__grid">
                 <a href="#" class="footer__link link">O nás</a>

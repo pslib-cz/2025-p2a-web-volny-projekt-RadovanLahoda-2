@@ -28,12 +28,13 @@
     img {
         display: block;
         max-width: 100%;
-        background-color: var(--orange-light);
+        /*background-color: var(--orange-light);*/
     }
 
     header {
         position: sticky;
         top: 0;
+        z-index: 1000;
     }
 }
 
@@ -60,13 +61,11 @@
     .mobile {
         display: flex;
         justify-content: center;
-        padding: 1rem;
     }
 
     .content {
         display: flex;
         flex-direction: column;
-        max-width: 960px;
         align-items: center;
     }
 
@@ -142,20 +141,24 @@
         grid-auto-rows: 27px;
         padding: 1.25rem 1rem;
     }
+
     .footer__image {
         width: 100%;
         object-fit: cover;
         height: 240px;
     }
+
     .footer__decoration {
         position: relative;
     }
+
     .footer__svg {
         position: absolute;
         left: 50%;
         transform: translate(-50%, -50%);
         top: 50%;
     }
+
     .grafier__logo {
         background-color: var(--white);
         padding: 0.25rem 0.75rem;
@@ -199,7 +202,6 @@
     }
 
     .card {
-        z-index: -1;
         display: flex;
         gap: 1rem;
         flex-direction: column;
@@ -229,6 +231,52 @@
         font-size: 1.25rem;
     }
 
+    .swiper__product {
+        padding: 0.5rem 0.25rem;
+        background-color: var(--white);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 0.5rem;
+        justify-items: center;
+    }
+
+    .swiper__product__title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    .swiper__product__item {
+        height: auto;
+        max-width: 244px;
+        object-fit: cover;
+    }
+
+    .swiper__container {
+        width: 100%;
+    }
+
+    /*.swipers {
+        display: flex;
+    }*/
+    .swiper__product__name {
+        background-color: var(--primary);
+        text-align: center;
+        padding: 0.75rem;
+        width: 100%;
+        box-sizing: border-box;
+        max-width: 244px;
+    }
+
+    .swiper__product__name--text {
+        text-decoration: none;
+        color: var(--black);
+    }
+
     .card__badge {
         background-color: var(--white);
         border-radius: 0 4rem 4rem 0;
@@ -249,10 +297,12 @@
         flex-direction: column;
         gap: 0.5rem;
     }
+
     .card__link {
         font-weight: bold;
         color: var(--orange-dark);
     }
+
     .button {
         background-color: var(--orange-light);
         border: 1px solid var(--orange-dark);
@@ -267,6 +317,7 @@
         text-decoration: none;
         color: var(--black);
     }
+
     .card__image {
         height: 360px;
         width: 100%;
@@ -274,6 +325,25 @@
     }
 
     .button::after {}
+
+    .swiper-button-prev {
+        background-image: url(../img/other/iconamoon--arrow-left-2.svg) !important;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        content: none;
+        
+    }
+
+    .swiper-button-next img, .swiper-button-prev img {
+        filter: drop-shadow(0px 0px 0.25rem var(--blue-dark));
+    }
+    .swiper__container {
+        
+    }
 
     @media (min-width: 1920px) {}
 }
