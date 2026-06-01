@@ -25,6 +25,10 @@
         font-family: var(--font-heading);
     }
 
+    ul {
+        list-style-type: none;
+    }
+
     img {
         display: block;
         max-width: 100%;
@@ -67,6 +71,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 2.25rem;
     }
 
     .heading {
@@ -74,9 +79,14 @@
         justify-items: center;
         max-width: 244px;
     }
+    .head__img {
+        width: 100%;
+        object-fit: cover;
+        height: 240px;
+    }
 
     .lepe_to_udelat_neslo {
-        height: 4px;
+        min-height: 4px;
         width: 100%;
         background-color: var(--secondary);
         border-radius: 5px;
@@ -114,6 +124,7 @@
         background-color: #18251B;
         display: flex;
         flex-direction: column;
+        margin-top: 2.25rem;
     }
 
     .footer__link--socials {
@@ -123,7 +134,7 @@
 
     .footer__copyright {
         display: flex;
-        gap: 0.25rem;
+        gap: 0.5rem;
         color: var(--white);
         justify-content: flex-end;
     }
@@ -172,7 +183,7 @@
     }
 
     .bubble {
-        border: 1px solid var(--secondary);
+        border: 1.5px solid var(--secondary);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -232,12 +243,10 @@
     }
 
     .swiper__product {
-        padding: 0.5rem 0.25rem;
+        padding: 0.5rem 0;
         background-color: var(--white);
         display: flex;
-        align-items: center;
         flex-direction: column;
-        gap: 0.5rem;
         justify-items: center;
     }
 
@@ -270,6 +279,7 @@
         width: 100%;
         box-sizing: border-box;
         max-width: 244px;
+        margin-top: 0.5rem;
     }
 
     .swiper__product__name--text {
@@ -305,7 +315,7 @@
 
     .button {
         background-color: var(--orange-light);
-        border: 1px solid var(--orange-dark);
+        border: 2px solid var(--orange-dark);
         border-radius: 1.5px;
         width: fit-content;
         font-size: 1.125rem;
@@ -314,8 +324,11 @@
     }
 
     .button__link {
+        display: flex;
         text-decoration: none;
         color: var(--black);
+        align-items: center;
+        gap: 0.25rem;
     }
 
     .card__image {
@@ -344,6 +357,74 @@
     .swiper__container {
         
     }
+    .hamburger__menu {
+        width: 3rem;
+        height: 40px;
+        z-index: 1;
+        position: relative;
+        cursor: pointer;
+        
+    }
+    .hamburger__menu__line {
+        position: absolute;
+        width: 3rem;
+        height: 0.25rem;
+        background-color: var(--white);
+        border-radius: 2px;
+    }
 
+    .hamburger__menu span:nth-child(1) { top: 0px; }
+    .hamburger__menu span:nth-child(2) { top: 18px; }
+    .hamburger__menu span:nth-child(3) { bottom: 0px; }
+
+    .open span:nth-child(1){
+        animation: topLine 0.6s forwards;
+    }
+    .open span:nth-child(2){
+        animation: middleLine 0.6s forwards;
+    }
+    .open span:nth-child(3){
+        animation: bottomLine 0.6s forwards;
+    }
+
+    @keyframes topLine {
+        50% {top: 18px; transform: rotate(0deg);}
+        100% {top: 18px; transform: rotate(45deg);}
+    }
+     @keyframes middleLine {
+        50% {transform: translateX(0px); opacity: 100;}
+        100% {transform: translateX(50px); opacity: 0;}
+    }
+     @keyframes bottomLine {
+        50% {bottom: 18px; transform: rotate(0deg);}
+        100% {bottom: 18px; transform: rotate(-45deg);}
+    }
+
+    .hamburger__menu__active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.75rem;
+        background-color: var(--secondary);
+        /*visibility: collapse;*/
+        position: fixed;
+        width:100%;
+        z-index: -1;
+        top: -100%;
+        transition: top 0.3s linear;
+    }
+
+    .hamburger__menu__active.open {
+        top: 48px;
+    }
+
+    .hamburger--item {
+        padding: 0.5rem;
+        color: var(--white);
+        font-size: 1.5rem;
+        text-decoration: none;
+        width: 100%;
+        text-align: center;
+    }
     @media (min-width: 1920px) {}
 }

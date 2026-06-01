@@ -7,6 +7,7 @@
     <link rel="icon" href="./img/logo/GrafierLogo.png">
     <title>GRAFIER</title>
     <script type="module" src="./src/main.js"></script>
+    <script type="module" src="./src/burger.js"></script>
 </head>
 
 <body>
@@ -20,12 +21,27 @@
             </div>
             <a href="#" class="navigation__link navigation__logo"><img src="./img/logo/GrafierLogo.svg"
                     alt="Gragier Logo"></a>
-            <a href="#" class="navigation__link"><img src="./img/svg/uil--linkedin.svg" alt="hamburger menu"></a>
+                <div class="hamburger__menu">
+                    <span class="hamburger__menu__line"></span>
+                    <span class="hamburger__menu__line"></span>
+                    <span class="hamburger__menu__line"></span>
+                </div>
         </nav>
+        <ul class="hamburger__menu__active">
+                <li><a href="#" class="hamburger--item">VÝPRODEJ</a></li>
+                <li><a href="#" class="hamburger--item">Komunita</a></li>
+                <li><a href="#" class="hamburger--item">E-Shop</a></li>
+                <li><a href="#" class="hamburger--item">O nás</a></li>
+                <li><a href="#" class="hamburger--item">Zákaznická podpora</a></li>
+                <li><a href="#" class="hamburger--item">Galerie</a></li>
+                <li><a href="#" class="hamburger--item">Můj košík</a></li>
+            </ul>
     </header>
+    
     <main class="mobile">
 
         <div class="content">
+            <img class="head__img" src="./img/product/Uvodni Tablet.jpg" alt="Úvodní tablet">
             <div class="heading">
                 <img src="./img/logo/LogoBig.svg" alt="Grafier Logo">
                 <p class="heading__text--line">Nabízíme špičkové grafické tablety a příslušenství, které padnou do ruky
@@ -54,9 +70,15 @@
                                 alt="Chromadraw 13 Pro"></div>
                         <div class="swiper__product__name"><a class="swiper__product__name--text" href="#"><span>ChromaDraw 13 Pro</span></a></div>
                     </div>
+                    <div class="swiper__product swiper-slide">
+                        <div><img class="swiper__product__item" src="./img/product/ChromaDraw 13 Pro.jpg"
+                                alt="Chromadraw 13 Pro"></div>
+                        <div class="swiper__product__name"><a class="swiper__product__name--text" href="#"><span>ChromaDraw 13 Pro</span></a></div>
+                    </div>
                     </div>
                     <div class="swiper-button-prev swiper-button-disabled"><img src="./img/other/iconamoon--arrow-left-2.svg" alt="Doleva"></div>
                     <div class="swiper-button-next swiper-button-disabled"><img src="./img/other/iconamoon--arrow-right-2.svg" alt="Doprava"></div>
+                    
             </div>
             <div class="card">
                 <div class="card__product">
@@ -72,7 +94,7 @@
                     <div class="card__desc">
                         <span class="big__font">Získejte nejnovější model ChromaDraw 13</span>
                         <div class="button">
-                            <a class="button__link" href="#">Objednat</a>
+                            <a class="button__link" href="#">Objednat<img src="./img/svg/lucide--mouse-pointer-click.svg" alt="Ikona"></a>
                         </div>
                     </div>
                 </div>
@@ -88,11 +110,39 @@
                     <img class="card__image" src="./img/other/Placeholder.png" alt="Záložní obrázek">
                     <div class="card__desc">
                         <span class="big__font">Připoj se do naší komunity!</span>
-                        <div class="card__link">
-                            <span>Dozvědět se více</span>
-                        </div>
+                        <a class="card__link" href="#">Dozvědět se více</a>
                     </div>
                 </div>
+            </div>
+            <div class="swiper__container swiper">
+                <div class="swiper__product__title">Produkty <img src="./img/logo/LogoSmall.svg" alt="Grafier Logo">
+                </div>
+                <div class="swipers swiper-wrapper">
+                    <div class="swiper__product swiper-slide">
+                        <div><img class="swiper__product__item" src="./img/product/ChromaDraw 13 Pro.jpg"
+                                alt="Chromadraw 13 Pro"></div>
+                        <div class="swiper__product__name"><a class="swiper__product__name--text" href="#"><span>ChromaDraw 13 Pro</span></a></div>
+                    </div>
+                
+                    <div class="swiper__product swiper-slide">
+                        <div><img class="swiper__product__item" src="./img/product/ChromaDraw 13 Pro.jpg"
+                                alt="Chromadraw 13 Pro"></div>
+                        <div class="swiper__product__name"><a class="swiper__product__name--text" href="#"><span>ChromaDraw 13 Pro</span></a></div>
+                    </div>
+                    <div class="swiper__product swiper-slide">
+                        <div><img class="swiper__product__item" src="./img/product/ChromaDraw 13 Pro.jpg"
+                                alt="Chromadraw 13 Pro"></div>
+                        <div class="swiper__product__name"><a class="swiper__product__name--text" href="#"><span>ChromaDraw 13 Pro</span></a></div>
+                    </div>
+                    <div class="swiper__product swiper-slide">
+                        <div><img class="swiper__product__item" src="./img/product/ChromaDraw 13 Pro.jpg"
+                                alt="Chromadraw 13 Pro"></div>
+                        <div class="swiper__product__name"><a class="swiper__product__name--text" href="#"><span>ChromaDraw 13 Pro</span></a></div>
+                    </div>
+                    </div>
+                    <div class="swiper-button-prev swiper-button-disabled"><img src="./img/other/iconamoon--arrow-left-2.svg" alt="Doleva"></div>
+                    <div class="swiper-button-next swiper-button-disabled"><img src="./img/other/iconamoon--arrow-right-2.svg" alt="Doprava"></div>
+                    
             </div>
             <div class="bubbles">
                 <div class="bubble bubble--right">
