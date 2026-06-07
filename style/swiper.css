@@ -1,0 +1,17 @@
+.swiper-button-prev {
+    background-image: url(../img/other/iconamoon--arrow-left-2.svg) !important;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    content: none;
+
+}
+
+.swiper-button-next img,
+.swiper-button-prev img {
+    filter: drop-shadow(0px 0px 0.25rem var(--blue-dark));
+}

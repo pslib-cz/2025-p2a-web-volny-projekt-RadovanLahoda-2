@@ -1,0 +1,30 @@
+.about {
+    padding: 1rem;
+}
+
+.about__card {
+    margin: 0 auto;
+    text-align: center;
+    margin: 2.5rem 0rem 5.5rem 0rem;
+}
+.card__title {
+    margin: 1.5rem 0rem;
+}
+
+.card__subtitle {
+    margin-bottom: 2rem;
+}
+
+.about__image {
+    margin-bottom: 2.5rem;
+}
+
+.card__line {
+    margin: 1.5rem auto;
+}
+
+.card__text {
+    font-style: italic;
+    font-weight: 100;
+    text-align: left;
+}
