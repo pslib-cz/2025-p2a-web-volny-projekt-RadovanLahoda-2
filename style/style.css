@@ -51,11 +51,7 @@
         height: 100%;
     }
 
-    header {
-        position: sticky;
-        top: 0;
-        z-index: 1000;
-    }
+    
 }
 
 @layer theme {
@@ -78,12 +74,12 @@
 
 @layer page {
 
-    .mobile {
+    .main-content {
         display: flex;
         justify-content: center;
     }
 
-    .content {
+    .content-wrapper{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -96,20 +92,26 @@
         max-width: 244px;
     }
 
-    .head__img {
+    .navigation {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .head-img {
         width: 100%;
         object-fit: cover;
         height: 240px;
     }
 
-    .lepe_to_udelat_neslo {
+    .line {
         min-height: 4px;
         width: 100%;
         background-color: var(--secondary);
         border-radius: 5px;
     }
 
-    .navigation {
+    .navbar {
         background-color: var(--secondary);
         display: flex;
         flex-direction: row;
@@ -120,13 +122,13 @@
         position: relative;
     }
 
-    .navigation__logo {
+    .navbar__logo {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
     }
 
-    .navigation__link {
+    .navbar__top {
         display: flex;
         gap: 0.5rem;
     }
@@ -135,9 +137,6 @@
         text-decoration: none;
         color: var(--white);
     }
-
-    .navigation__link__item {}
-
     .footer {
         background-color: #18251B;
         display: flex;
@@ -165,20 +164,20 @@
         padding: 1.25rem 1rem;
     }
 
-    .footer__grid {
+    .footer__bar {
         display: flex;
         justify-content: space-between;
         margin: 1rem;
     }
 
-    .footer__left,
-    .footer__right {
+    .bar--left,
+    .bar--right {
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
     }
 
-    .footer__right {
+    .bar__right {
         text-align: right;
     }
 
@@ -242,7 +241,7 @@
     .bubble__title {
         font-weight: bold;
     }
-    .card__product {
+    .card {
         position: relative;
         margin-bottom: 1rem;
     }
@@ -262,7 +261,7 @@
         font-weight: bold;
         text-align: center;
         height: 120px;
-        justify-items: center;
+        justify-content: center;
     }
 
     .swiper__product {
@@ -273,7 +272,7 @@
         justify-items: center;
     }
 
-    .swiper__product__title {
+    .container__title {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -284,7 +283,7 @@
         width: 128px;
     }
 
-    .swiper__product__item {
+    .product__item {
         height: auto;
         max-width: 244px;
         object-fit: cover;
@@ -293,11 +292,7 @@
     .swiper__container {
         width: 100%;
     }
-
-    /*.swipers {
-        display: flex;
-    }*/
-    .swiper__product__name {
+    .product__name {
         background-color: var(--primary);
         text-align: center;
         padding: 0.75rem;
@@ -307,25 +302,25 @@
         margin-top: 0.5rem;
     }
 
-    .swiper__product__name--text {
+    .product__name--link {
         text-decoration: none;
         color: var(--black);
     }
 
-    .card__badge {
+    .cover__badge {
         background-color: var(--white);
         border-radius: 0 4rem 4rem 0;
         padding: 0.5rem 1rem;
         width: fit-content;
     }
 
-    .card__badge--orange {
+    .cover__badge--orange {
         background-color: var(--orange-dark);
         color: var(--white);
         font-weight: bold;
     }
 
-    .card__badges {
+    .card__cover {
         position: absolute;
         margin: 0.5rem 0;
         display: flex;
@@ -361,8 +356,6 @@
         object-fit: cover;
     }
 
-    .button::after {}
-
     .swiper-button-prev {
         background-image: url(../img/other/iconamoon--arrow-left-2.svg) !important;
         background-repeat: no-repeat;
@@ -381,9 +374,7 @@
         filter: drop-shadow(0px 0px 0.25rem var(--blue-dark));
     }
 
-    .swiper__container {}
-
-    .hamburger__menu {
+    .hamburger-menu {
         width: 3rem;
         height: 40px;
         z-index: 1;
@@ -391,7 +382,7 @@
         cursor: pointer;
     }
 
-    .hamburger__menu__line {
+    .hamburger-menu__line {
         position: absolute;
         width: 3rem;
         height: 0.25rem;
@@ -399,45 +390,45 @@
         border-radius: 2px;
     }
 
-    .hamburger__menu.open span {
+    .hamburger-menu.open span {
         transition: top 0.25s ease-in 0s,
         bottom 0.25s ease-in 0s,
         transform 0.25s ease-in 0.25s,
         opacity 0.25s ease-in 0.25s
     }
-    .hamburger__menu span {
+    .hamburger-menu span {
         transition: top 0.25s ease-in 0.25s,
         bottom 0.25s ease-in 0.25s,
         transform 0.25s ease-in 0s,
         opacity 0.25s ease-in 0s
     }
 
-    .hamburger__menu span:nth-child(1) {
+    .hamburger-menu span:nth-child(1) {
         top: 0px;
         transform: rotate(0deg);
     }
 
-    .hamburger__menu span:nth-child(2) {
+    .hamburger-menu span:nth-child(2) {
         top: 18px;
         opacity: 1;
     }
 
-    .hamburger__menu span:nth-child(3) {
+    .hamburger-menu span:nth-child(3) {
         bottom: 0px;
         transform: rotate(0deg);
     }
 
-    .hamburger__menu.open span:nth-child(1) {
+    .hamburger-menu.open span:nth-child(1) {
         top: 18px;
         transform: rotate(45deg);
     }
 
-    .hamburger__menu.open span:nth-child(2) {
+    .hamburger-menu.open span:nth-child(2) {
         transform: translateX(50px);
         opacity: 0;
     }
 
-    .hamburger__menu.open span:nth-child(3) {
+    .hamburger-menu.open span:nth-child(3) {
         bottom: 18px;
         transform: rotate(-45deg);
     }
@@ -480,12 +471,12 @@
         }
     }
 
-    .hamburger__menu__active {
+    .hamburger-menu--active {
         border-top: 2px dashed var(--white);
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 0.75rem;
+        padding: 1rem;
         background-color: var(--secondary);
         position: fixed;
         width: 100%;
@@ -493,23 +484,26 @@
         top: -100%;
         transition: top 0.5s linear;
         gap: 0.5rem;
+        list-style-type: none;
+        margin: 0;
     }
 
 
-    .hamburger__menu__active.open {
+    .hamburger-menu--active.open {
         top: calc(3rem + 1.5rem + 4px);
         /* nejdriv velikost navigace, potom aby slo videt cely menu a nakonec kompenzace carky (nemám tušení jak lépe to udělat)*/
     }
 
-    .hamburger--item {
-        padding: 0.5rem;
+    .hamburger-menu__item {
+        padding: 0.8rem;
         color: var(--white);
         text-decoration: none;
         width: 100%;
         text-align: center;
+        font-size: 1.5rem;
     }
 
-    .hamburger--item:hover {
+    .hamburger-menu__item:hover {
         color: var(--green-dark);
     }
 
@@ -529,11 +523,9 @@
         padding: 0.25rem 0rem;
     }
 
-    .swiper__product__name--review {
+    .product__name--review {
         margin-bottom: 0.5rem;
     }
-
-    .swiper__review__user {}
 
     .swiper__review__rating {
         display: flex;
@@ -555,9 +547,8 @@
 
     }
 
-    .satoshi {
-        font-family: var(--font-heading);
-    }
+    @media (min-width: 1920px) {
 
-    @media (min-width: 1920px) {}
+        
+    }
 }

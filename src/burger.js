@@ -1,5 +1,5 @@
-const button = document.querySelector(".hamburger__menu");
-const navMenu = document.querySelector(".hamburger__menu__active");
+const button = document.querySelector(".hamburger-menu");
+const navMenu = document.querySelector(".hamburger-menu--active");
 let buttonActive = false;
 button.addEventListener("click", () => {
 
