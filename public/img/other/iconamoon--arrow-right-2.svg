@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+	<style>
+	.qd2pzh {
+	  fill: none;
+	  stroke: var(--svg-color--fff, #4AD4D4);
+	  stroke-linecap: round;
+	  stroke-linejoin: round;
+	  stroke-width: var(--svg-stroke-width--2px, 2px);
+	  d: path("m10 17l5-5m0 0l-5-5");
+	}
+	
+	</style>
+	<path class="qd2pzh" />
+</svg>

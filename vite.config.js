@@ -11,7 +11,7 @@ export default defineConfig({
         contacts: "./pages/contacts.html",
         p1: "./products/p1.html",
         p2: "./products/p2.html",
-        p3: "./products/p3.html",
+        p3: "./products/p3.html",   
         p4: "./products/p4.html",
       },
     },
