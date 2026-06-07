@@ -17,6 +17,8 @@
 
 .about__image {
     margin-bottom: 2.5rem;
+        object-fit: cover;
+        max-height: 240px;
 }
 
 .card__line {

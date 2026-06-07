@@ -1,17 +1,22 @@
-.swiper-button-prev {
-    background-image: url(../img/other/iconamoon--arrow-left-2.svg) !important;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    display: none !important;
 }
 
 .swiper-button-next,
 .swiper-button-prev {
-    content: none;
-
+    background-image: none !important; 
+    width: auto;
 }
-
 .swiper-button-next img,
 .swiper-button-prev img {
+    width: 48px;
+    height: auto;
     filter: drop-shadow(0px 0px 0.25rem var(--blue-dark));
+    cursor: pointer;
+}
+
+.swiper-slide {
+    max-width: 244px;
+    width: 75%;
 }
