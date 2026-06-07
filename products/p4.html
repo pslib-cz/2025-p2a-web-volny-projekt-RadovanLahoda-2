@@ -9,6 +9,7 @@
     <script type="module" src="../src/main.js"></script>
     <script type="module" src="../src/burger.js"></script>
     <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/product.css">
     <link rel="stylesheet" href="../style/about.css">
     <link rel="stylesheet" href="../style/normalize.css">
 
@@ -20,10 +21,11 @@
     <nav class="navigation">
         <div class="navbar">
             <div class="navbar__top">
-                <a href="#"><img src="../img/svg/iconamoon--profile-circle-fill.svg" alt="account icon"></a>
-                <a href="#"><img src="../img/svg/material-symbols--search.svg" alt="search icon"></a>
+                <a href="#"><img src="/img/svg/iconamoon--profile-circle-fill.svg" alt="account icon"></a>
+                <a href="#"><img src="/img/svg/material-symbols--search.svg" alt="search icon"></a>
             </div>
-            <a href="#" class="navbar__link navbar__logo"><img src="../img/logo/GrafierLogo.svg" alt="Gragier Logo"></a>
+            <a href="../index.html" class="navbar__link navbar__logo"><img src="/img/logo/GrafierLogo.svg"
+                    alt="Gragier Logo"></a>
 
             <div class="hamburger-menu">
                 <span class="hamburger-menu__line"></span>
@@ -41,7 +43,65 @@
             <li><a href="#" class="hamburger-menu__item">Můj košík</a></li>
         </menu>
     </nav>
-   <footer>
+    <main>
+        <section class="product">
+            <h2 class="product__name">VisionPen Studio 16</h2>
+            <div class="card">
+                <div class="card__cover">
+                    <img class="cover__image" src="../img/product/VisionPen Studio 16.jpg" alt="rukavice">
+                    <div class="cover__rating">
+                        <img src="../img/other/StarFull.svg" alt="full star">
+                        <img src="../img/other/StarFull.svg" alt="full star">
+                        <img src="../img/other/StarFull.svg" alt="full star">
+                        <img src="../img/other/StarHalf.svg" alt="half full star">
+                        <img src="../img/other/StarEmpty.svg" alt="empty star">
+                    </div>
+                    <div class="cover__colors">
+                        <div class="colors_option colors_option--black"></div>
+                        <div class="colors_option colors_option--white"></div>
+                    </div>
+                </div>
+
+                <div class="card__shop">
+                    <div class="shop__price">
+                        <h2 class="price--orange">18 790 Kč</h2>
+                        <h5>17, 290 Kč Bez DPH</h5>
+                    </div>
+                    <div class="shop__button">
+                        <a class="button__link" href="#">
+                            <h3>Do košíku</h3><img class="link--cart" src="../img/svg/mdi--cart-outline.svg"
+                                alt="Ikona">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <p class="product__desc">Náš nejlepší a nejpokročilejší model navržený pro grafická studia, 3D modeláře a profesionální umělce. 
+Ideální pro ilustrátory a designéry, kteří vyžadují naprostou přesnost barev a ostré detaily přímo pod svýma rukama.</p>
+            <div class="product__specs">
+               <div class="specs__row specs__row--highlight">
+                    <span class="specs__label">Rozlišení</span>
+                    <span class="specs__value">3840 x 2160 (4K UHD)</span>
+                </div>
+
+                <div class="specs__row">
+                    <span class="specs__label">Parametry</span>
+                    <span class="specs__value">(V,Š,H) 265/410/15 mm</span>
+                </div>
+
+                <div class="specs__row specs__row--highlight">
+                    <span class="specs__label">Připojení</span>
+                    <span class="specs__value">USB-C</span>
+                </div>
+
+                <div class="specs__row">
+                    <span class="specs__label">Kategorie</span>
+                    <span class="specs__value">Displejový tablet</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
         <div class="footer">
             <div class="footer__decoration">
                 <img class="footer__image" src="../img/other/Placeholder.png" alt="Footer Logo">

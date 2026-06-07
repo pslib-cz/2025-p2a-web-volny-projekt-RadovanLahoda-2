@@ -1,0 +1,145 @@
+.product__specs {
+    margin: 2rem 0rem;
+ }
+
+ .specs__row {
+    display: flex;
+     justify-content: space-between;
+     padding: 0.5rem 1rem;
+     align-items: center;
+     background-color: var(--white);
+ }
+
+ .specs__row--highlight {
+    background-color: var(--primary);
+ }
+
+ .specs--left,
+ .specs--right {
+     display: flex;
+     flex-direction: column;
+     gap: 0.5rem;
+ }
+
+ .specs--right {
+
+     text-align: right;
+     font-weight: bold;
+    font-family: var(--font-heading);
+    font-size: 0.75rem;
+     
+
+ }
+ .specs--left {
+    text-align: left;
+    font-size: 1.25rem;
+    font-weight: bold;
+    font-family: var(--font-heading);
+ }
+
+ .specs__label {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: var(--font-heading);
+ }
+
+ .specs__value {
+    font-weight: bold;
+    font-family: var(--font-heading);
+    font-size: 0.875rem;
+ }
+ .cover__image {
+    object-fit: cover;
+    width: 100%;
+    height: 224px;
+ }
+
+ .cover__colors {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.75rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+ }
+
+ .colors_option {
+    width: 2rem;
+    height: 2rem;
+    border: 2.5px solid var(--orange-dark);
+    border-radius: 0.175rem;
+ }
+ .colors_option:active {
+    border: 2.5px solid var(--green-light);
+ }
+
+.colors_option--black {
+    
+    background-color: var(--black);
+}
+.colors_option--white {
+    background-color: var(--white);
+}
+
+ .cover__rating {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    display: flex;
+    gap: 5px;
+ }
+
+ .card__cover {
+    position: relative;
+ }
+
+ .card__shop {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--white);
+    padding: 1rem;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+ }
+ 
+
+ .shop__button {
+     background-color: var(--orange-light);
+     border: 2px solid var(--orange-dark);
+     border-radius: 1.5px;
+     width: fit-content;
+     padding: 0.375rem;
+     border-radius: 6px;
+ }
+
+ .button__link {
+     display: flex;
+     text-decoration: none;
+     color: var(--black);
+     align-items: center;
+     gap: 0.25rem;
+ }
+ .shop__price {
+    text-align: left;
+ }
+
+ .price--orange {
+    color: var(--orange-dark);
+ }
+ .link--cart {
+    width: 1.175rem;
+    height: 1.175rem;  
+ }
+
+ .product__name {
+    margin: 3rem 0rem;
+ }
+
+ .product__desc {
+    margin: 1rem;
+    margin-top: 2rem;
+    text-align: left;
+ }
+ .product {
+    text-align: center;
+ }
