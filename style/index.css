@@ -234,3 +234,21 @@
     transform: translateY(-4px);
     filter: sepia(60%);
 }
+
+@media (min-width: 1024px) {
+     .heading   {
+        max-width: none;
+     } 
+     .heading img {
+        max-width: 244px;
+     }
+     .cards {
+        display: flex;
+        gap: 1.5rem;
+
+     }
+     .card__image {
+        width: 900px;
+     }
+
+}
