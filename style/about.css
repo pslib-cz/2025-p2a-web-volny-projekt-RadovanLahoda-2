@@ -30,3 +30,13 @@
     font-weight: 100;
     text-align: left;
 }
+
+@media (min-width: 1024px) {
+
+    .about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+    }  
+    
+}
