@@ -25,30 +25,35 @@
 <body>
 
 
-    <nav class="navigation">
+ <nav class="navigation">
         <div class="navbar">
             <div class="navbar__top">
                 <a href="#"><img src="../img/svg/iconamoon--profile-circle-fill.svg" alt="account icon"></a>
                 <a href="#"><img src="../img/svg/material-symbols--search.svg" alt="search icon"></a>
             </div>
-            <a href="../index.html" class="navbar__link navbar__logo"><img src="../img/logo/GrafierLogo.svg"
-                    alt="Gragier Logo"></a>
+            <div class="navbar__logo">
+                <a href="../index.html" class="navbar__link"><img src="../img/logo/GrafierLogo.svg"
+                        alt="Gragier Logo"></a>
+                    <span class="navbar__logo--name">GRAFIER</span>
+            </div>
+
 
             <div class="hamburger-menu">
                 <span class="hamburger-menu__line"></span>
                 <span class="hamburger-menu__line"></span>
                 <span class="hamburger-menu__line"></span>
             </div>
+            <menu class="hamburger-menu--active">
+                <li><a href="#" class="hamburger-menu__item">VÝPRODEJ</a></li>
+                <li><a href="#" class="hamburger-menu__item">Komunita</a></li>
+                <li><a href="#" class="hamburger-menu__item">E-Shop</a></li>
+                <li><a href="../pages/about.html" class="hamburger-menu__item">O nás</a></li>
+                <li><a href="../pages/contacts.html" class="hamburger-menu__item">Zákaznická podpora</a></li>
+                <li><a href="#" class="hamburger-menu__item">Galerie</a></li>
+                <li><a href="#" class="hamburger-menu__item">Můj košík</a></li>
+            </menu>
         </div>
-        <menu class="hamburger-menu--active">
-            <li><a href="#" class="hamburger-menu__item">VÝPRODEJ</a></li>
-            <li><a href="#" class="hamburger-menu__item">Komunita</a></li>
-            <li><a href="#" class="hamburger-menu__item">E-Shop</a></li>
-            <li><a href="../pages/about.html" class="hamburger-menu__item">O nás</a></li>
-            <li><a href="../pages/contacts.html" class="hamburger-menu__item">Zákaznická podpora</a></li>
-            <li><a href="#" class="hamburger-menu__item">Galerie</a></li>
-            <li><a href="#" class="hamburger-menu__item">Můj košík</a></li>
-        </menu>
+
     </nav>
     <main>
         <section class="product">
