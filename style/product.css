@@ -110,6 +110,7 @@
      width: fit-content;
      padding: 0.375rem;
      border-radius: 6px;
+     margin: 1rem;
  }
 
  .button__link {

@@ -238,6 +238,8 @@
 @media (min-width: 1024px) {
      .heading   {
         max-width: none;
+        text-align: center;
+
      } 
      .heading img {
         max-width: 244px;
@@ -255,6 +257,12 @@
         max-width: none;
         gap: 332px;
         margin: 1.5rem;
+     }
+     .heading__text {
+        font-size: 3rem;
+     }
+     .line {
+        height: 0.5rem;
      }
 
 }

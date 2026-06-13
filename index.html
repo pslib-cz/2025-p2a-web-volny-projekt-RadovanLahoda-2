@@ -7,13 +7,13 @@
     <link rel="icon" href="../img/favicon/favicon-96x96.png">
 
     <link rel="icon" type="image/png" href="./img/svg/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="./img/svg/favicon.svg" />
-<link rel="shortcut icon" href="./img/svg/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="./img/svg/apple-touch-icon.png" />
-<link rel="manifest" href="./img/svg/site.webmanifest" />
+    <link rel="icon" type="image/svg+xml" href="./img/svg/favicon.svg" />
+    <link rel="shortcut icon" href="./img/svg/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/svg/apple-touch-icon.png" />
+    <link rel="manifest" href="./img/svg/site.webmanifest" />
 
     <title>GRAFIER</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/index.css">
     <link rel="stylesheet" href="./style/swiper.css">
@@ -21,29 +21,35 @@
 </head>
 
 <body>
-   <nav class="navigation">
+    <nav class="navigation">
         <div class="navbar">
             <div class="navbar__top">
                 <a href="#"><img src="./img/svg/iconamoon--profile-circle-fill.svg" alt="account icon"></a>
                 <a href="#"><img src="./img/svg/material-symbols--search.svg" alt="search icon"></a>
             </div>
-            <a href="./index.html" class="navbar__link navbar__logo"><img src="./img/logo/GrafierLogo.svg" alt="Gragier Logo"></a>
+            <div class="navbar__logo">
+                <a href="./index.html" class="navbar__link"><img src="./img/logo/GrafierLogo.svg"
+                        alt="Gragier Logo"></a>
+                    <span class="navbar__logo--name">GRAFIER</span>
+            </div>
+
 
             <div class="hamburger-menu">
                 <span class="hamburger-menu__line"></span>
                 <span class="hamburger-menu__line"></span>
                 <span class="hamburger-menu__line"></span>
             </div>
+            <menu class="hamburger-menu--active">
+                <li><a href="#" class="hamburger-menu__item">VÝPRODEJ</a></li>
+                <li><a href="#" class="hamburger-menu__item">Komunita</a></li>
+                <li><a href="#" class="hamburger-menu__item">E-Shop</a></li>
+                <li><a href="../pages/about.html" class="hamburger-menu__item">O nás</a></li>
+                <li><a href="../pages/contacts.html" class="hamburger-menu__item">Zákaznická podpora</a></li>
+                <li><a href="#" class="hamburger-menu__item">Galerie</a></li>
+                <li><a href="#" class="hamburger-menu__item">Můj košík</a></li>
+            </menu>
         </div>
-        <menu class="hamburger-menu--active">
-            <li><a href="#" class="hamburger-menu__item">VÝPRODEJ</a></li>
-            <li><a href="#" class="hamburger-menu__item">Komunita</a></li>
-            <li><a href="#" class="hamburger-menu__item">E-Shop</a></li>
-            <li><a href="../pages/about.html" class="hamburger-menu__item">O nás</a></li>
-            <li><a href="../pages/contacts.html" class="hamburger-menu__item">Zákaznická podpora</a></li>
-            <li><a href="#" class="hamburger-menu__item">Galerie</a></li>
-            <li><a href="#" class="hamburger-menu__item">Můj košík</a></li>
-        </menu>
+
     </nav>
 
     <main class="main-content">
@@ -52,37 +58,72 @@
             <img class="head-img" src="./img/product/tablet6.jpg" alt="Úvodní tablet">
             <header class="heading">
                 <img src="./img/logo/LogoBig.svg" alt="Grafier Logo">
-                <p class="heading__text--line">Nabízíme špičkové grafické tablety a příslušenství, které padnou do ruky
+                <p class="heading__text">Nabízíme špičkové grafické tablety a příslušenství, které padnou do ruky
                     začínajícím tvůrcům i ostříleným profesionálům.</p>
                 <hr class="line">
-                <p>Oživte své nápady, objevte nové možnosti a posuňte svou kreativitu na zcela novou úroveň s nástroji,
+                <p class="heading__text">Oživte své nápady, objevte nové možnosti a posuňte svou kreativitu na zcela novou úroveň s nástroji,
                     na které je spolehnutí.</p>
             </header>
             <section class="swiper__container swiper">
-                <h2 class="container__title">Produkty<img class="logo__small" src="./img/logo/LogoSmall.svg" alt="Grafier Logo">
+                <h2 class="container__title">Produkty<img class="logo__small" src="./img/logo/LogoSmall.svg"
+                        alt="Grafier Logo">
                 </h2>
                 <div class="swipers swiper-wrapper">
                     <div class="swiper__product swiper-slide">
-                        <div class="product__image--wrapper"><a href="./products/p1.html" target="_blank" class="image-link"><img class="product__item" src="./img/product/ChromaDraw 13 Pro.jpg"
-                                alt="Chromadraw 13 Pro"></a></div>
+                        <div class="product__image--wrapper"><a href="./products/p1.html" target="_blank"
+                                class="image-link"><img class="product__item" src="./img/product/ChromaDraw 13 Pro.jpg"
+                                    alt="Chromadraw 13 Pro"></a></div>
                         <div class="product__name"><a class="product__name--link"
                                 href="./img/product/ChromaDraw 13 Pro.jpg"><span>ChromaDraw 13 Pro</span></a></div>
                     </div>
                     <div class="swiper__product swiper-slide">
-                        <div class="product__image--wrapper"><a href="./products/p2.html" target="_blank" class="image-link"><img class="product__item" src="./img/product/Dvouprsté Rukavice.jpg"
-                                alt="Speciální rukavice na 2 prsty"></a></div>
+                        <div class="product__image--wrapper"><a href="./products/p2.html" target="_blank"
+                                class="image-link"><img class="product__item" src="./img/product/Dvouprsté Rukavice.jpg"
+                                    alt="Speciální rukavice na 2 prsty"></a></div>
                         <div class="product__name"><a class="product__name--link"
-                                href="./img/product/Dvouprsté Rukavice.jpg"><span>Speciální rukavice na 2 prsty</span></a></div>
+                                href="./img/product/Dvouprsté Rukavice.jpg"><span>Speciální rukavice na 2
+                                    prsty</span></a></div>
                     </div>
                     <div class="swiper__product swiper-slide">
-                        <div class="product__image--wrapper"><a href="./products/p3.html" target="_blank" class="image-link"><img class="product__item" src="./img/product/Inkpad Dot 10.jpg"
-                                alt="Inkpad Dot 10"></a></div>
+                        <div class="product__image--wrapper"><a href="./products/p3.html" target="_blank"
+                                class="image-link"><img class="product__item" src="./img/product/Inkpad Dot 10.jpg"
+                                    alt="Inkpad Dot 10"></a></div>
                         <div class="product__name"><a class="product__name--link"
                                 href="./img/product/VisionPen Studio 16.jpg"><span>Inkpad Dot 10</span></a></div>
                     </div>
                     <div class="swiper__product swiper-slide">
-                        <div class="product__image--wrapper"><a href="./products/p4.html" target="_blank" class="image-link"><img class="product__item" src="./img/product/VisionPen Studio 16.jpg"
-                                alt="VisionPen Studio 16"></a></div>
+                        <div class="product__image--wrapper"><a href="./products/p4.html" target="_blank"
+                                class="image-link"><img class="product__item"
+                                    src="./img/product/VisionPen Studio 16.jpg" alt="VisionPen Studio 16"></a></div>
+                        <div class="product__name"><a class="product__name--link"
+                                href="./img/product/Inkpad Dot 10.jpg"><span>VisionPen Studio 16</span></a></div>
+                    </div>
+                    <div class="swiper__product swiper-slide">
+                        <div class="product__image--wrapper"><a href="./products/p1.html" target="_blank"
+                                class="image-link"><img class="product__item" src="./img/product/ChromaDraw 13 Pro.jpg"
+                                    alt="Chromadraw 13 Pro"></a></div>
+                        <div class="product__name"><a class="product__name--link"
+                                href="./img/product/ChromaDraw 13 Pro.jpg"><span>ChromaDraw 13 Pro</span></a></div>
+                    </div>
+                    <div class="swiper__product swiper-slide">
+                        <div class="product__image--wrapper"><a href="./products/p2.html" target="_blank"
+                                class="image-link"><img class="product__item" src="./img/product/Dvouprsté Rukavice.jpg"
+                                    alt="Speciální rukavice na 2 prsty"></a></div>
+                        <div class="product__name"><a class="product__name--link"
+                                href="./img/product/Dvouprsté Rukavice.jpg"><span>Speciální rukavice na 2
+                                    prsty</span></a></div>
+                    </div>
+                    <div class="swiper__product swiper-slide">
+                        <div class="product__image--wrapper"><a href="./products/p3.html" target="_blank"
+                                class="image-link"><img class="product__item" src="./img/product/Inkpad Dot 10.jpg"
+                                    alt="Inkpad Dot 10"></a></div>
+                        <div class="product__name"><a class="product__name--link"
+                                href="./img/product/VisionPen Studio 16.jpg"><span>Inkpad Dot 10</span></a></div>
+                    </div>
+                    <div class="swiper__product swiper-slide">
+                        <div class="product__image--wrapper"><a href="./products/p4.html" target="_blank"
+                                class="image-link"><img class="product__item"
+                                    src="./img/product/VisionPen Studio 16.jpg" alt="VisionPen Studio 16"></a></div>
                         <div class="product__name"><a class="product__name--link"
                                 href="./img/product/Inkpad Dot 10.jpg"><span>VisionPen Studio 16</span></a></div>
                     </div>
@@ -107,7 +148,7 @@
                     <div class="card__desc">
                         <h3>Získejte nejnovější model ChromaDraw 13</h3>
                         <div class="button">
-                            <a class="button__link" href="#">Objednat<img
+                            <a class="button__link" href="./img/product/ChromaDraw 13 Pro.jpg">Objednat<img
                                     src="./img/svg/lucide--mouse-pointer-click.svg" alt="Ikona"></a>
                         </div>
                     </div>
@@ -132,8 +173,8 @@
                 <h2 class="container__title">Uživatelské recenze</h2>
                 <div class="swipers swiper-wrapper">
                     <div class="swiper__product swiper-slide">
-                        <div class="product__name product__name--review"><a
-                                class="product__name--link" href="#"><span>ChromaDraw 13 Pro</span></a></div>
+                        <div class="product__name product__name--review"><a class="product__name--link"
+                                href="#"><span>ChromaDraw 13 Pro</span></a></div>
                         <div class="swiper__review">
                             <div class="swiper__review__top">
                                 <div class="swiper__review__rating">
@@ -155,8 +196,8 @@
                         </div>
                     </div>
                     <div class="swiper__product swiper-slide">
-                        <div class="product__name product__name--review"><a
-                                class="product__name--link" href="#"><span>ChromaDraw 13 Pro</span></a></div>
+                        <div class="product__name product__name--review"><a class="product__name--link"
+                                href="#"><span>ChromaDraw 13 Pro</span></a></div>
                         <div class="swiper__review">
                             <div class="swiper__review__top">
                                 <div class="swiper__review__rating">
@@ -178,8 +219,8 @@
                         </div>
                     </div>
                     <div class="swiper__product swiper-slide">
-                        <div class="product__name product__name--review"><a
-                                class="product__name--link" href="#"><span>ChromaDraw 13 Pro</span></a></div>
+                        <div class="product__name product__name--review"><a class="product__name--link"
+                                href="#"><span>ChromaDraw 13 Pro</span></a></div>
                         <div class="swiper__review">
                             <div class="swiper__review__top">
                                 <div class="swiper__review__rating">
@@ -201,8 +242,8 @@
                         </div>
                     </div>
                     <div class="swiper__product swiper-slide">
-                        <div class="product__name product__name--review"><a
-                                class="product__name--link" href="#"><span>ChromaDraw 13 Pro</span></a></div>
+                        <div class="product__name product__name--review"><a class="product__name--link"
+                                href="#"><span>ChromaDraw 13 Pro</span></a></div>
                         <div class="swiper__review">
                             <div class="swiper__review__top">
                                 <div class="swiper__review__rating">
@@ -224,8 +265,8 @@
                         </div>
                     </div>
                     <div class="swiper__product swiper-slide">
-                        <div class="product__name product__name--review"><a
-                                class="product__name--link" href="#"><span>ChromaDraw 13 Pro</span></a></div>
+                        <div class="product__name product__name--review"><a class="product__name--link"
+                                href="#"><span>ChromaDraw 13 Pro</span></a></div>
                         <div class="swiper__review">
                             <div class="swiper__review__top">
                                 <div class="swiper__review__rating">
@@ -304,4 +345,5 @@
     <script type="module" src="./src/main.js"></script>
     <script type="module" src="./src/burger.js"></script>
 </body>
+
 </html>
